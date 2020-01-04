@@ -1,7 +1,7 @@
 $lt-gray: #ddd;
-$background-dark: #5A3AB7;
-$background-light: #99F4E5;
-$background-pale: #D1C4E9;
+$background-dark: #000;
+$background-light: #dd1021;
+$background-pale: #FFD2D2;
 
 // Height variables
 $carousel-item-height: 300px;
@@ -80,6 +80,14 @@ body{
     color: $background-pale
   }
 }
+
+
+  .carousel-indicators li {
+      background-color: #FFD8D8;
+  }
+  .carousel-indicators .active {
+      background-color: #dd1021;
+  }
 
 
 #carouselButton {
