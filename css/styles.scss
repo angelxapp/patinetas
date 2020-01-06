@@ -2,6 +2,8 @@ $lt-gray: #ddd;
 $background-dark: #000;
 $background-light: #dd1021;
 $background-pale: #FFD2D2;
+$dark-purple:#373463;
+$gray-pale:#F6F6F6;
 
 // Height variables
 $carousel-item-height: 300px;
@@ -22,14 +24,14 @@ $carousel-item-height: 300px;
 }
 
 .footer{
-    background-color: $background-pale;
+    background-color: $background-dark;
+		color: white;
     @include zero-margin(20px, 0px);
 }
 
 .jumbotron {
     @include zero-margin(70px,30px);
-    background: $background-light ;
-    color:floralwhite;
+    color: $dark-purple;
 }
 
 address{
@@ -44,7 +46,8 @@ body{
 }
 
 .navbar-dark {
-     background-color: $background-dark;
+     background-color: $background-light;
+		 color:white;
 }
 
 .tab-content {
@@ -55,26 +58,36 @@ body{
 }
 
 .carousel {
-    background:$background-dark;
+		color: $dark-purple;
+
+		.carousel-caption p {
+		  color: #373463;}
+
+		.carousel-caption h3 {
+		  color: #373463;}
+
+		.carousel-caption h2 {
+		  color: #373463;}
 
     .carousel-item {
         height: $carousel-item-height;
+		    color: $dark-purple;
         img {
-            position: absolute;
+            margin: auto;
             top: 0;
             left: 0;
-            min-height: 300px;
+            height: 300px;
         }
     }
 }
 
 .modal{
   .modal-header{
-    background: $background-dark;
-    color:floralwhite;
+    background: $background-light;
+    color:white;
   }
   .modal-content{
-    background: $background-pale;
+    background: $lt-gray;
   }
   .close{
     color: $background-pale
